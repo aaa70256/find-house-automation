@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.0",
+    "cypress": "^13.13.1",
+    "init": "^0.1.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/**/*.{js,ts}"
+  },
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.93.0"
+  }
+}
